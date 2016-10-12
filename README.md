@@ -4,6 +4,11 @@ a mobile web app to display a list  of sports articles
 a single page application that displays a list of articles,
 each of which can  be selected by the user to see a single article view
 
+!! As this is a demo project, there is only one detailed article, 
+that is on single-news-article.json file
+so when you click on the main page you get the same text details 
+for all the articles, only the image is changing 
+
 
 Live demo
 http://testsportnews.co.nf/
