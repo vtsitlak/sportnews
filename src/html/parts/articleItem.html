@@ -2,19 +2,42 @@
 <div class="article-item">
     <a ui-sref="article({_id: feed.id, img_url: feed.links[0].url})">
         <img class="img-responsive" data-toggle="tooltip" title="{{feed.links[0].caption}}" ng-src="{{ feed.links[0].url }}" alt="{{feed.links[0].altText}}" />
-        <div class="title">
-            <span>
+                           <div class="title">
+                
                 {{feed.headline }}
-            </span>
-        </div>
-        <div class="time">
-            <p>
+           
+            </div>
+            <div class="time">
+
                 <i class="fa fa-clock-o" aria-hidden="true"></i> {{feed.publishedTime | date }}, last update {{feed.publishedTime | timeAgo }}
-            </p>
-        </div>
-        <div class="text">
-            {{feed.teaser }}
-        </div>   
+
+            </div>
+            <div class="col-xs-12">
+                <div class="text">
+
+                    {{feed.teaser }}
+
+                </div>
+            </div> 
         <span class="sr-only" ng-repeat="k in feed.keywords">{{k.keyword}}</span>
+<!--        <div class="outer">
+            <div class="title">
+                
+                {{feed.headline }}
+           
+            </div>
+            <div class="time">
+
+                <i class="fa fa-clock-o" aria-hidden="true"></i> {{feed.publishedTime | date }}, last update {{feed.publishedTime | timeAgo }}
+
+            </div>
+            <div class="col-xs-12">
+                <div class="text">
+
+                    {{feed.teaser }}
+
+                </div>
+            </div>
+        </div>-->
     </a>
 </div>
