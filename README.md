@@ -6,7 +6,7 @@ each of which can  be selected by the user to see a single article�
 
 !! As this is a demo project, there is only one detailed article, 
 that is on single-news-article.json file
-so when you click on the main page you get the same text details 
+so when you click on a feed on the main page you get the same text details 
 for all the articles, only the image is changing 
 
 
