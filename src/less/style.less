@@ -1,0 +1,20 @@
+body {
+    margin-top: 50px;
+    background-color: @custom-grey-light;
+    color: @custom-purple;
+    font-family: @font-family-archivo;
+    .logo {
+        font-family: @font-family-canon;
+    }
+    @media (min-width: @screen-sm ) {
+        margin-top: 80px;
+    }
+    .row-no-padding {
+        @media (max-width: @screen-sm) {
+            [class*="col-xs"] {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+    }
+}

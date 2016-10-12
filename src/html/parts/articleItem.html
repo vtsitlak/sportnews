@@ -1,0 +1,20 @@
+<!--template for article item-->
+<div class="article-item">
+    <a ui-sref="article({_id: feed.id, img_url: feed.links[0].url})">
+        <img class="img-responsive" data-toggle="tooltip" title="{{feed.links[0].caption}}" ng-src="{{ feed.links[0].url }}" alt="{{feed.links[0].altText}}" />
+        <div class="title">
+            <span>
+                {{feed.headline }}
+            </span>
+        </div>
+        <div class="time">
+            <p>
+                <i class="fa fa-clock-o" aria-hidden="true"></i> {{feed.publishedTime | date }}, last update {{feed.publishedTime | timeAgo }}
+            </p>
+        </div>
+        <div class="text">
+            {{feed.teaser }}
+        </div>   
+        <span class="sr-only" ng-repeat="k in feed.keywords">{{k.keyword}}</span>
+    </a>
+</div>

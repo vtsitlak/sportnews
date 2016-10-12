@@ -1,0 +1,24 @@
+<!--template for main page-->
+<nav class="navbar navigation-menu navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header col-xs-6">
+                <a class="navbar-brand logo" ui-sref="main"><i class="fa fa-futbol-o" aria-hidden="true"></i>
+      Sport  News</a>
+            </div>
+            <div class="col-xs-6">
+                <div class="navbar-form">
+                    <!--select search filter directive. On update the selected value we call the updateFeed function -->
+                    <sc-select class='search-menu' ng-model="test" sc-options="keyword for keyword in keywords" placeholder="search.." ng-change="updateFeed(test)">
+                    </sc-select>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row row-no-padding">
+        <!-- load article item directives order by date of publishing -->
+        <article-item class="col-xs-12 col-sm-6" ng-repeat="feed in filteredFeeds | orderBy: '-publishedTime'" feed='feed'></article-item>
+    </div>
+</div>

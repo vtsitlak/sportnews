@@ -1,0 +1,61 @@
+.article-item {
+    a {
+        cursor: pointer;
+    }
+    padding: 0 0 5px 0!important;
+    position: relative;
+    img {
+        display: block;
+        position: relative;
+        width: 100%;
+        /* for IE 6 */
+    }
+    .title{
+        bottom:90px;
+        left:10px;
+        right: 10px;
+        position: absolute;
+        //height: 30px;
+        background-color: @custom-red;
+        color: @custom-grey-light;
+        opacity: 0.5;
+        span {
+            padding: 10px;
+            font-size: 14px;
+            display: inline-block;
+        }
+        
+        
+    }
+    .time {
+        display: block;
+        position: absolute;
+        background-color: @custom-blue-grey;
+        color: @custom-grey-light;
+        opacity: 0.5;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        height: 80px;
+        line-height: 25px;
+        
+        p {
+            font-size: 10px;
+            padding: 0 10px;
+        }
+    }
+    .text {
+        text-overflow: ellipsis;
+        padding: 5px;
+        display: block;
+        //width: 100%;
+        position: absolute;
+        background-color: @custom-grey-light;
+        opacity: 0.7;
+        bottom: 15px;
+        height: 55px;
+        left: 15px;
+        right: 15px;
+        font-size: 12px;
+    }
+}

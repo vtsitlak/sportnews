@@ -1,0 +1,43 @@
+<!--template for article page-->
+<nav class="navbar navigation-menu navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header col-xs-6">
+                <a class="navbar-brand logo" ui-sref="main"><i class="fa fa-futbol-o" aria-hidden="true"></i>
+      Sport  News</a>
+            </div>
+            <div class="col-xs-6 text-right">
+                <a ui-sref="main" class="return">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i> back to results
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container article">
+    <div class="row row-no-padding">
+        <img class="img-responsive" data-toggle="tooltip" title="{{article.links[0].caption}}" ng-src="{{ img_url }}" alt="{{article.links[0].altText}}" />
+    </div>
+    <div class="row time">
+        <p class="col-xs-12">
+            <i class="fa fa-clock-o" aria-hidden="true"></i> {{article.publishedTime | date }}, last update {{article.publishedTime | timeAgo }}
+        </p>
+    </div>
+    <div class="row byLine">
+        <p class="col-xs-12"> <i class="fa fa-pencil" aria-hidden="true"></i> {{article.byLine}}
+        </p>
+    </div>
+    <div class="title row">
+        <h2 class="col-xs-12">
+            {{article.headline }}
+        </h2>
+    </div>
+    <div class="text row teaser">
+        <p class="col-xs-12 text-justify">
+            {{article.teaser }}
+        </p>
+    </div>
+    <div class="row body col-xs-12 text-justify" ng-bind-html="article.body">
+    </div>
+    <span class="sr-only" ng-repeat="k in article.keywords">{{k.keyword}}</span>
+</div>

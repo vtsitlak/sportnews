@@ -1,0 +1,43 @@
+{
+  "name": "sportnews",
+  "version": "1.0.0",
+  "description": "a mobile web app to display a list  of sports articles",
+  "main": "app.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vtsitlak/sportnews.git"
+  },
+  "keywords": [
+    "news",
+    "games",
+    "sports",
+    "article",
+    "football",
+    "soccer"
+  ],
+  "author": "vtsitlak@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vtsitlak/sportnews/issues"
+  },
+  "homepage": "https://github.com/vtsitlak/sportnews#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-cache": "^0.4.5",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-less": "^3.1.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "stream-series": "^0.1.1"
+  },
+  "dependencies": {}
+}
